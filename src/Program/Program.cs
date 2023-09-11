@@ -20,12 +20,18 @@ namespace Full_GRASP_And_SOLID
         public static void Main(string[] args)
         {
             PopulateCatalogs();
-
             Recipe recipe = new Recipe();
             recipe.FinalProduct = GetProduct("Café con leche");
             recipe.AddStep(new Step(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120));
             recipe.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
+
+            // Creo una instancia de ProductionCostCalculator para calcular el costo total de producción.
+            ProductionCostCalculator costCalculator = new ProductionCostCalculator();
+            double totalProductionCost = costCalculator.CalculateTotalProductionCost(recipe);
+
+            // Imprimo la receta y el costo total de producción.
             recipe.PrintRecipe();
+            Console.WriteLine($"Costo total de producción: {totalProductionCost}");
         }
 
         private static void PopulateCatalogs()

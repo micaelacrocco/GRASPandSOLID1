@@ -34,5 +34,10 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
         }
+        // Agrego el método GetSteps() para obtener la lista de pasos, que se utiliza en ProductionCostCalculator.
+        public ArrayList GetSteps()
+        {
+            return this.steps;
+        }
     }
 }
