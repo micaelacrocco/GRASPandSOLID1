@@ -6,8 +6,22 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    /// Clase que representa un equipo.
+    /// </summary> <summary>
+    /// 
+    /// </summary>
     public class Equipment
     {
+        /// <summary>
+        /// Constructor de la clase Equipment.
+        /// </summary>
+        /// <param name="description"></param>
+        /// <param name="hourlyCost"></param> <summary>
+        /// 
+        /// </summary>
+        /// <param name="description"></param>
+        /// <param name="hourlyCost"></param>
         public Equipment(string description, double hourlyCost)
         {
             this.Description = description;

@@ -6,8 +6,16 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    /// Clase que representa un producto.
+    /// </summary>
     public class Product
     {
+        /// <summary>
+        /// Constructor de la clase Product.
+        /// </summary>
+        /// <param name="description"></param>
+        /// <param name="unitCost"></param>
         public Product(string description, double unitCost)
         {
             this.Description = description;

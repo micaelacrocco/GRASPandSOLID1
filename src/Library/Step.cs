@@ -6,8 +6,18 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    /// Clase que representa un paso.
+    /// </summary>
     public class Step
     {
+        /// <summary>
+        /// Constructor de la clase Step.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="quantity"></param>
+        /// <param name="equipment"></param>
+        /// <param name="time"></param>
         public Step(Product input, double quantity, Equipment equipment, int time)
         {
             this.Quantity = quantity;
